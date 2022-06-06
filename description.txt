@@ -1,0 +1,40 @@
+1. https://github.com/graphql/graphql-spec
+    - graphql spec github
+
+2. graphql test page
+    - https://graphql.org/swapi-graphql/
+
+3. 폴더 생성
+    a) npm init -y
+        - node repository 초기화
+    b) npm i apollo-server graphql
+        - apollo server & graphql 설치!
+    c) npm i nodemon -D
+        - 더 나은 개발을 위해.(-D(devDepondencies))
+    d) server.js, .gitignore 파일 생성.
+        - .gitignore에서 node_modules/ 추가
+        - git init . 실행 > 깃 레포지토리 초기화
+        - package.json 에서 "type": "module" 추가, "dev": "nodemon server.js" 스크립트 변경
+        - server.js 에서 import {ApolloServer, gql} from "apollo-server"; 추가
+    e) npm run dev 실행
+        - server run!!
+
+4. Type 구성.(GraphQL Schema 정의 언어)
+    - server.js 의 typeDefs = gql`` 안에 작성
+    - Query: GET과 같은,,,
+    - Mutation: POST, PUT, DELETE와 같은,,,
+    - 그 외: Class와 같은,,,
+    - ! is not null (required): String!
+
+5. resolver 구성.
+    - data 요청 시 실제로 호출되는 함수.
+
+6. https://altair.sirmuel.design/
+    - GraphQL의 Documentation을 볼 수 있는 페이지.
+    - Web > 보려는 PAGE URL > SEND > DOC
+
+7. npm i node-fetch
+    - fetch 사용
+
+8. 데이터베이스 연동은 하수라를 찾아보길,,,
+    - Hasura GraphQL 엔진
